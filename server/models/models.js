@@ -64,6 +64,9 @@ Device.belongsTo(Type)
 Brand.hasMany(Device)
 Device.belongsTo(Brand)
 
+Device.hasMany(DeviceInfo)
+DeviceInfo.belongsTo(Device)
+
 Device.hasMany(Rating)
 Rating.belongsTo(Device)
 
